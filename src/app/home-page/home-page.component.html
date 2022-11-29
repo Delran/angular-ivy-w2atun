@@ -1,0 +1,10 @@
+<div>
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <formly-form
+      [form]="userForm"
+      [fields]="fields"
+      [model]="model"
+    ></formly-form>
+    <button mat-raised-button color="primary" type="submit">Login</button>
+  </form>
+</div>
