@@ -10,10 +10,12 @@ import { MatInputModule } from '@angular/material/input';
 import { FormlyMaterialModule } from '@ngx-formly/material';
 import { FormlyShowPasswordComponent } from './formly-show-password/formly-show-password.component';
 import { FormlyModule } from '@ngx-formly/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     MatFormFieldModule,
     MatButtonModule,
@@ -22,11 +24,7 @@ import { FormlyModule } from '@ngx-formly/core';
     FormlyModule,
     FormlyMaterialModule,
   ],
-  declarations: [
-    AppComponent, 
-    HomePageComponent, 
-    FormlyShowPasswordComponent
-  ],
+  declarations: [AppComponent, HomePageComponent, FormlyShowPasswordComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
