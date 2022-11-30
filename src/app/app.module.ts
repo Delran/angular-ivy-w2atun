@@ -11,15 +11,21 @@ import { FormlyMaterialModule } from '@ngx-formly/material';
 import { FormlyShowPasswordComponent } from './formly-show-password/formly-show-password.component';
 import { FormlyModule } from '@ngx-formly/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatIconModule } from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   imports: [
+    AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
+    MatCardModule,
     MatFormFieldModule,
     MatButtonModule,
     MatInputModule,
+    MatIconModule,
     ReactiveFormsModule,
     FormlyModule,
     FormlyMaterialModule,

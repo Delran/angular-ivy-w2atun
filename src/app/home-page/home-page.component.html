@@ -1,10 +1,17 @@
-<div>
-  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
-    <formly-form
-      [form]="userForm"
-      [fields]="fields"
-      [model]="model"
-    ></formly-form>
-    <button mat-raised-button color="primary" type="submit">Login</button>
-  </form>
+<div id="login-wrapper">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title> Hello </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+        <formly-form
+          [form]="userForm"
+          [fields]="fields"
+          [model]="model"
+        ></formly-form>
+        <button mat-raised-button color="primary" type="submit">Login</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
 </div>
