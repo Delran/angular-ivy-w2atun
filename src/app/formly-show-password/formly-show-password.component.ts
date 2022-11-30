@@ -1,13 +1,18 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
-import { FieldType } from '@ngx-formly/core';
+import { Component } from '@angular/core';
+import { FieldType, FieldTypeConfig } from '@ngx-formly/core';
 
 @Component({
   selector: 'formly-show-password',
-  template: `<input>`,
-  styleUrls: ['./formly-show-password.component.scss'],
+  template: `
+  <input>
+  `,
+  styles: [
+    `
+    input {
+      width: 100%;
+      margin-bottom: 5%;
+    }
+    `,
+  ],
 })
-export class FormlyShowPasswordComponent extends FieldType {
-  @ViewChild('passwordField', { static: false }) passwordField!: ElementRef;
-
-  hidePassword: boolean = true;
-}
+export class FormlyShowPasswordComponent extends FieldType<FieldTypeConfig> {}
