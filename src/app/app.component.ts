@@ -1,6 +1,6 @@
 import { Component, VERSION } from '@angular/core';
 import { ChildrenOutletContexts } from '@angular/router';
-import { fadeAnimation } from './animation';
+import { fadeAnimation } from './animations/animation';
 
 @Component({
   selector: 'my-app',
