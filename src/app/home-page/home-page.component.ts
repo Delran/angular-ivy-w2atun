@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { FormlyFieldConfig } from '@ngx-formly/core';
+import { fadeAnimation } from '../animations/animation';
 import { FormlyShowPasswordComponent } from '../formly-show-password/formly-show-password.component';
 
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.scss'],
+  animations: [fadeAnimation],
 })
 export class HomePageComponent implements OnInit {
   userForm = this.formBuilder.group({});
