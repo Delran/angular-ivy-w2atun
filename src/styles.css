@@ -9,3 +9,11 @@ body {
   height: 100%;
   width: 100%;
 }
+
+formly-show-password {
+  display: none;
+}
+
+formly-form formly-show-password {
+  display: block;
+}
